@@ -11,7 +11,8 @@
   <modules>
     <module>book-system</module>
     <module>student-system</module>
-      <module>eureka-server</module>
+    <module>eureka-server</module>
+    <module>borrow-common</module>
   </modules>
 
   <description>这是图书借阅微服务系统(book-system)</description>
@@ -24,6 +25,7 @@
     <junit.version>4.12</junit.version>
     <log4j.version>1.2.17</log4j.version>
     <lombok.version>1.16.18</lombok.version>
+    <swagger.version>3.0.0</swagger.version>
     <mysql.version>8.0.32</mysql.version>
     <druid.version>1.2.6</druid.version>
     <spring-cloud.version>2021.0.8</spring-cloud.version>
@@ -103,6 +105,28 @@
         <artifactId>druid-spring-boot-starter</artifactId>
         <version>1.1.10</version>
       </dependency>
+
+      <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-boot-starter</artifactId>
+        <version>${swagger.version}</version>
+      </dependency>
+<!--
+
+      &lt;!&ndash;swagger &ndash;&gt;
+      <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-swagger2</artifactId>
+        <version>${swagger.version}</version>
+      </dependency>
+      &lt;!&ndash;swagger ui&ndash;&gt;
+      <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-swagger-ui</artifactId>
+        <version>${swagger.version}</version>
+      </dependency>
+-->
+
 
     </dependencies>
   </dependencyManagement>
