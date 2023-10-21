@@ -31,7 +31,10 @@
     <mysql.version>8.0.32</mysql.version>
     <druid.version>1.2.6</druid.version>
     <mybatis-plus.version>3.4.1</mybatis-plus.version>
+    <velocity-engine.version>2.3</velocity-engine.version>
     <mybatis-plus-generator.version>3.5.3</mybatis-plus-generator.version>
+    <org.apache.commons.lang3>3.0</org.apache.commons.lang3>
+    <modelmapper.version>3.1.0</modelmapper.version>
   </properties>
 
   <!-- 子模块继承之后，提供作用：锁定版本+子modlue不用写groupId和version  -->
@@ -132,6 +135,23 @@
         <version>${mybatis-plus.version}</version>
       </dependency>
 
+      <dependency>
+        <groupId>org.apache.velocity</groupId>
+        <artifactId>velocity-engine-core</artifactId>
+        <version>${velocity-engine.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${org.apache.commons.lang3}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.modelmapper</groupId>
+        <artifactId>modelmapper</artifactId>
+        <version>${modelmapper.version}</version>
+      </dependency>
 
     </dependencies>
   </dependencyManagement>
